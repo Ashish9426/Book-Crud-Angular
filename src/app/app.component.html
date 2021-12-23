@@ -1,0 +1,28 @@
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-info">
+    <a href="#" class="navbar-brand">Store</a>
+    <div class="navbar-nav mr-auto">
+      <!-- <li class="nav-item">
+        <a routerLink="book-list" class="nav-link">Book List</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="add-book" class="nav-link">Add Book</a>
+      </li> -->
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Book Store
+        </a>
+        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+          <li><a class="nav-link text-danger" aria-current="page" routerLink="/add-book">Add Book</a></li>
+          <li><a class="nav-link text-danger" aria-current="page" routerLink="/book-list">Book List</a></li>
+        </ul>
+      </li>
+      
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>
