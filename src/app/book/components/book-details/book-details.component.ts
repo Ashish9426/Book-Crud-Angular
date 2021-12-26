@@ -27,6 +27,7 @@ export class BookDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.message = '';
     this.getBook(this.route.snapshot.params.id);
+    // console.log(this.route.snapshot.params.id)
   }
 
   getBook(id: string): void {
